@@ -1,12 +1,10 @@
-import { log } from "console"
-
 interface SpendingCategoryCardProps {
   category: string,
   limit: number,
-  spended: number
+  spent: number
 }
 
-const addNumberComa = (number: number): string=>{
+const formatAmount = (number: number): string=>{
   if(number >= 1000 && number < 10000) return String(number).charAt(0) + ',' + String(number).slice(1)
   else if (number >= 10000) return String(number).slice(0,2) + ',' + String(number).slice(2)
   else return String(number)
@@ -15,22 +13,22 @@ const addNumberComa = (number: number): string=>{
 export default function SpendingCategoryCard({
   category,
   limit,
-  spended
+  spent
 }: SpendingCategoryCardProps){
-  const percentageSpended = (spended / limit) * 100;
+  const percentageSpent = (spent / limit) * 100;
 
   
   return(
     <article className="flex flex-col gap-2">
     <div className="flex justify-between">
       <h3 className="text-text-primary ">{category}</h3>
-      <span className="text-text-secondary">RD$ {addNumberComa(spended)} / {addNumberComa(limit)}</span>
+      <span className="text-text-secondary">RD$ {formatAmount(spent)} / {formatAmount(limit)}</span>
       </div>
         <div className="bg-card-border/40 overflow-hidden
          rounded-full w-full h-4 ">
         <div 
         className=" rounded-full h-4"
-        style={{width:percentageSpended + '%', backgroundColor:`${percentageSpended >= 100 ? 'var(--color-alert)' : 'var(--color-primary)'}` }}
+        style={{width:percentageSpent + '%', backgroundColor:`${percentageSpent >= 100 ? 'var(--color-alert)' : 'var(--color-primary)'}` }}
       ></div>
       </div>
       
