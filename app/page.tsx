@@ -1,9 +1,12 @@
 import SpendingByCategory from "@/components/home/SpendingByCategory";
 import IncomeVsExpenses from "@/components/home/IncomeVsExpenses";
-
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
 
 export default function Home() {
   return (
+    <>
+      <Header />
       <main className="flex flex-col overflow-x-hidden items-center justify-center max-w-300 w-19/20 m-auto ">
           <section className="max-w-125 flex flex-col items-center justify-center gap-8 mt-20">
             <span className="py-1 px-7 border border-card-border text-text-secondary rounded-full">Income, expenses and goals in one place</span>
@@ -50,5 +53,7 @@ export default function Home() {
             <SpendingByCategory />
           </section>
       </main>
+      <Footer />
+    </>
   );
 }
