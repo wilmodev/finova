@@ -1,7 +1,7 @@
-import SpendingByCategory from "@/components/home/SpendingByCategory";
-import IncomeVsExpenses from "@/components/home/IncomeVsExpenses";
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
+import SpendingByCategory from "@/app/_components/home/SpendingByCategory";
+import IncomeVsExpenses from "@/app/_components/home/IncomeVsExpenses";
+import Header from "@/app/_components/layout/Header";
+import Footer from "@/app/_components/layout/Footer";
 
 export default function Home() {
   return (

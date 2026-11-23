@@ -18,15 +18,14 @@ export default function NavLink({name, icon}:{
         href={`/${name.toLowerCase()}`}
         className={` ${isActive ? 'text-primary' : ''}`}
         >
-        <button className="flex gap-3 py-2 items-center cursor-pointer ">
-        <span className={`w-1 h-6 rounded-full bg-primary opacity-0 group-hover:opacity-100 ${isActive ? 'opacity-100' : ''} `}></span>
-          <svg className={`w-8 h-8 ${isActive ? 'text-white font-sans text-xl' : 'text-text-secondary'}`}>
-            <use href={`/sidebar-icons.svg#${icon}`}></use>
+        <button className="flex gap-3 py-3 items-center cursor-pointer">
+        <span className={`w-1 h-6 rounded-full bg-primary opacity-0 group-hover:opacity-100 ${isActive ? 'opacity-100' : ''} `} />
+          <svg className={`w-8 h-8 ${isActive ? 'text-primary/60 font-sans text-xl' : 'text-text-secondary'}`}>
+            <use href={`/sidebar-icons.svg#${icon}`} />
           </svg>
-          <span className={`group-hover:text-white ${isActive ? 'text-white font-sans text-xl' : 'text-text-secondary'}`}>{name}</span>
+          <span className={`group-hover:text-white text-lg ${isActive ? 'text-white font-sans text-xl' : 'text-text-secondary'}`}>{name}</span>
         </button>
         </Link>
       </li>
-    
   )
 }

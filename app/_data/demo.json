@@ -1,0 +1,55 @@
+{
+  "settings": {
+    "currency": "DOP",
+    "locale": "en-DO",
+    "theme": "dark"
+  },
+  "accounts": [
+    { "id": "acc-cash", "name": "Cash", "type": "cash" },
+    { "id": "acc-bank", "name": "Bank", "type": "bank" },
+    { "id": "acc-card", "name": "Card", "type": "card" }
+  ],
+  "categories": [
+    { "id": "cat-food", "name": "Food", "type": "expense", "color": "#8B5CF6", "icon": "cart" },
+    { "id": "cat-housing", "name": "Housing", "type": "expense", "color": "#8B5CF6", "icon": "bolt" },
+    { "id": "cat-transport", "name": "Transport", "type": "expense", "color": "#8B5CF6", "icon": "car" },
+    { "id": "cat-leisure", "name": "Leisure", "type": "expense", "color": "#F58AC0", "icon": "film" },
+    { "id": "cat-salary", "name": "Income", "type": "income", "color": "#B79CFF", "icon": "download" }
+  ],
+  "transactions": [
+    { "id": "tx-001", "title": "Supermarket", "type": "expense", "amount": 3420, "date": "2026-11-18", "categoryId": "cat-food", "accountId": "acc-cash" },
+    { "id": "tx-002", "title": "Coffee shop", "type": "expense", "amount": 1450, "date": "2026-11-16", "categoryId": "cat-food", "accountId": "acc-card" },
+    { "id": "tx-003", "title": "Fuel", "type": "expense", "amount": 2450, "date": "2026-11-16", "categoryId": "cat-transport", "accountId": "acc-card" },
+    { "id": "tx-004", "title": "Salary", "type": "income", "amount": 85000, "date": "2026-11-15", "categoryId": "cat-salary", "accountId": "acc-bank" },
+    { "id": "tx-005", "title": "Dinner with friends", "type": "expense", "amount": 2450, "date": "2026-11-15", "categoryId": "cat-leisure", "accountId": "acc-card" },
+    { "id": "tx-006", "title": "Uber", "type": "expense", "amount": 1150, "date": "2026-11-14", "categoryId": "cat-transport", "accountId": "acc-card" },
+    { "id": "tx-007", "title": "Restaurant", "type": "expense", "amount": 2200, "date": "2026-11-13", "categoryId": "cat-food", "accountId": "acc-card" },
+    { "id": "tx-008", "title": "Electricity bill", "type": "expense", "amount": 2300, "date": "2026-11-12", "categoryId": "cat-housing", "accountId": "acc-bank" },
+    { "id": "tx-009", "title": "Cinema", "type": "expense", "amount": 850, "date": "2026-11-10", "categoryId": "cat-leisure", "accountId": "acc-card" },
+    { "id": "tx-010", "title": "Concert tickets", "type": "expense", "amount": 4500, "date": "2026-11-07", "categoryId": "cat-leisure", "accountId": "acc-card" },
+    { "id": "tx-011", "title": "Restaurant", "type": "expense", "amount": 2150, "date": "2026-11-06", "categoryId": "cat-food", "accountId": "acc-card" },
+    { "id": "tx-012", "title": "Internet", "type": "expense", "amount": 1000, "date": "2026-11-05", "categoryId": "cat-housing", "accountId": "acc-bank" },
+    { "id": "tx-013", "title": "Fuel", "type": "expense", "amount": 2500, "date": "2026-11-03", "categoryId": "cat-transport", "accountId": "acc-card" },
+    { "id": "tx-014", "title": "Streaming", "type": "expense", "amount": 650, "date": "2026-11-02", "categoryId": "cat-leisure", "accountId": "acc-card" },
+    { "id": "tx-015", "title": "Supermarket", "type": "expense", "amount": 3180, "date": "2026-11-01", "categoryId": "cat-food", "accountId": "acc-cash" },
+    { "id": "tx-016", "title": "Rent", "type": "expense", "amount": 6500, "date": "2026-11-01", "categoryId": "cat-housing", "accountId": "acc-bank" }
+  ],
+  "history": [
+    { "month": "2026-06", "income": 78000, "expenses": 48000 },
+    { "month": "2026-07", "income": 72000, "expenses": 54000 },
+    { "month": "2026-08", "income": 70000, "expenses": 42000 },
+    { "month": "2026-09", "income": 80000, "expenses": 62000 },
+    { "month": "2026-10", "income": 78560, "expenses": 37925 }
+  ],
+  "budgets": [
+    { "id": "bud-food", "categoryId": "cat-food", "month": "2026-11", "limit": 16000 },
+    { "id": "bud-housing", "categoryId": "cat-housing", "month": "2026-11", "limit": 15000 },
+    { "id": "bud-transport", "categoryId": "cat-transport", "month": "2026-11", "limit": 15000 },
+    { "id": "bud-leisure", "categoryId": "cat-leisure", "month": "2026-11", "limit": 8000 }
+  ],
+  "goals": [
+    { "id": "goal-emergency", "name": "Emergency fund", "targetAmount": 100000, "currentAmount": 60000, "deadline": "2027-03-31" },
+    { "id": "goal-laptop", "name": "New laptop", "targetAmount": 60000, "currentAmount": 27000, "deadline": "2027-01-31" },
+    { "id": "goal-vacation", "name": "Vacation", "targetAmount": 50000, "currentAmount": 14000, "deadline": "2027-07-31" }
+  ]
+}

@@ -39,9 +39,8 @@ const sidebarItems = [
 
 
 export default function Sidebar(){
-  
   return(
-  <aside className="flex flex-col gap-3 items-left bg-background w-full max-w-80 px-1 border-r border-text-secondary/30 ">
+  <aside className="flex-col hidden lg:flex gap-3 items-left bg-background w-full max-w-70 px-1 border-r border-text-secondary/30 ">
     <div className='z-40'>
         <Image
           src={finovaLogo}
