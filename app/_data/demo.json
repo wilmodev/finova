@@ -35,12 +35,18 @@
     { "id": "tx-016", "title": "Rent", "type": "expense", "amount": 6500, "date": "2026-11-01", "categoryId": "cat-housing", "accountId": "acc-bank" }
   ],
   "history": [
-    { "month": "2026-06", "income": 78000, "expenses": 48000 },
-    { "month": "2026-07", "income": 72000, "expenses": 54000 },
-    { "month": "2026-08", "income": 70000, "expenses": 42000 },
-    { "month": "2026-09", "income": 80000, "expenses": 62000 },
-    { "month": "2026-10", "income": 78560, "expenses": 37925 }
-  ],
+  { "month": "2025-12", "income": 76000, "expenses": 58000 },
+  { "month": "2026-01", "income": 72000, "expenses": 49000 },
+  { "month": "2026-02", "income": 70000, "expenses": 44000 },
+  { "month": "2026-03", "income": 74000, "expenses": 51000 },
+  { "month": "2026-04", "income": 75000, "expenses": 47000 },
+  { "month": "2026-05", "income": 77000, "expenses": 52000 },
+  { "month": "2026-06", "income": 78000, "expenses": 48000 },
+  { "month": "2026-07", "income": 72000, "expenses": 54000 },
+  { "month": "2026-08", "income": 70000, "expenses": 42000 },
+  { "month": "2026-09", "income": 80000, "expenses": 62000 },
+  { "month": "2026-10", "income": 78560, "expenses": 37925 }
+],
   "budgets": [
     { "id": "bud-food", "categoryId": "cat-food", "month": "2026-11", "limit": 16000 },
     { "id": "bud-housing", "categoryId": "cat-housing", "month": "2026-11", "limit": 15000 },

@@ -1,5 +1,3 @@
-
-import Link from "next/link"
 import Image from 'next/image'
 import finovaLogo from '@/public/finova-logo.svg'
 import NavLink from "./NavLink"
@@ -40,7 +38,7 @@ const sidebarItems = [
 
 export default function Sidebar(){
   return(
-  <aside className="flex-col hidden lg:flex gap-3 items-left bg-background w-full max-w-70 px-1 border-r border-text-secondary/30 ">
+  <aside className="flex-col hidden lg:flex gap-3 items-left bg-background min-w-60 w-full max-w-75 px-1 border-r border-text-secondary/30 ">
     <div className='z-40'>
         <Image
           src={finovaLogo}

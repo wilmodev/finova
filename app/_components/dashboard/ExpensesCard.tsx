@@ -6,7 +6,7 @@ export default function ExpensesCard({vsPrevieusMonthExpenses, previeusMonth, ex
 
 }) {
   return (
-    <article className="rounded-2xl p-5 flex w-full flex-1 h-full flex-col gap-2 border   bg-card-border border-text-secondary/20">
+    <article className="rounded-3xl p-5 flex w-full flex-1 h-full flex-col gap-2 border   bg-card-border border-text-secondary/20">
           <div className='flex gap-2 items-center'>
               <svg 
                 className="text-light-secondary w-10 h-10 p-2 rounded-full"
@@ -22,7 +22,7 @@ export default function ExpensesCard({vsPrevieusMonthExpenses, previeusMonth, ex
             <span className="text-text-secondary ">Expenses</span>
           </div>
           <div>
-          <span className="text-xl md:text-3xl font-semibold text-text-primary ">RD$ {addComma(expenses)}</span>
+          <span className="text-xl md:text-2xl font-semibold text-text-primary ">RD$ {addComma(expenses)}</span>
           <div className="flex gap-1 items-center text-sm font-semibold rounded-full  w-fit"
               style={{
                     color: vsPrevieusMonthExpenses > 0 ? 'var(--color-light-secondary)' : 'var(--color-alert)'

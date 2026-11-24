@@ -8,7 +8,7 @@ export default function SavingRateCard({
   saved:number
 }) {
   return (
-    <article className="rounded-2xl items-center xl:flex-col xl:items-start p-5 h-full flex flex-1 w-full  gap-2 border 
+    <article className="rounded-3xl items-center xl:flex-col xl:items-start p-5 h-full flex flex-1 w-full  gap-2 border 
       bg-card-border border-text-secondary/20">
         <div className='flex  gap-2 items-center'>
           <SavingsRing
@@ -17,7 +17,7 @@ export default function SavingRateCard({
           />    
         <div className='flex w-min items-center flex-wrap xl:flex-nowrap '>
           <span className="text-text-secondary text-nowrap">Savings rate</span>
-          <span className="text-3xl font-semibold xl:hidden text-text-primary ">{savingRate.toFixed(1)}%</span>
+          <span className="text-2xl font-semibold xl:hidden text-text-primary ">{savingRate.toFixed(1)}%</span>
           </div>
           
         </div>
