@@ -1,40 +1,10 @@
 'use client'
 import NavLink from "./NavLink"
 import { useEffect, useState } from "react";
+import { links } from "./Sidebar";
 
-const sidebarItems = [
-  {
-    name: 'Dashboard',
-    icon: 'icon-grid'
-  },
-  {
-    name: 'Transactions',
-    icon: 'icon-exchange'
-  },
-  {
-    name: 'Categories',
-    icon: 'icon-tag'
-  },
-  {
-    name: 'Budgets',
-    icon: 'icon-clock'
-  },
-  {
-    name: 'Reports',
-    icon: 'icon-chart-bars'
-  },
-  {
-    name: 'Goals',
-    icon: 'icon-target'
-  },
-  {
-    name: 'Settings',
-    icon: 'icon-sliders'
-  }
-
-]
-const first = sidebarItems.slice(0,3);
-const second = sidebarItems.slice(3);
+const first = links.slice(0,3);
+const second = links.slice(3);
 
 
 export default function Navbar() {

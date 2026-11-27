@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute" aria-hidden="true">
+  <!-- Ids match the "icon" field of each category in the demo data: cart, bolt, car, film, download -->
+
+  <!-- Food / Supermarket -->
+  <symbol id="icon-cart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M3 4H5.5L7.5 15H18.5L20.5 8H6.2"/>
+    <circle cx="9.5" cy="19.5" r="1.5" fill="currentColor" stroke="none"/>
+    <circle cx="17" cy="19.5" r="1.5" fill="currentColor" stroke="none"/>
+  </symbol>
+
+  <!-- Housing / Electricity -->
+  <symbol id="icon-bolt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M13.5 2.5L5.5 13H11.5L10.5 21.5L18.5 11H12.5Z"/>
+  </symbol>
+
+  <!-- Transport -->
+  <symbol id="icon-car" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M3 15V11L6 6.5H18L21 11V15Z"/>
+    <path d="M3 11H21"/>
+    <circle cx="7.5" cy="17.5" r="1.7" fill="currentColor" stroke="none"/>
+    <circle cx="16.5" cy="17.5" r="1.7" fill="currentColor" stroke="none"/>
+  </symbol>
+
+  <!-- Leisure / Cinema -->
+  <symbol id="icon-film" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="3" y="5" width="18" height="14" rx="3"/>
+    <path d="M10 9.5L15 12L10 14.5Z"/>
+  </symbol>
+
+  <!-- Income / Salary -->
+  <symbol id="icon-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 4V15M8 11L12 15L16 11M5 20H19"/>
+  </symbol>
+
+  <!-- Fallback for custom categories -->
+  <symbol id="icon-tag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M3 3H12L21 12L12 21L3 12Z"/>
+    <circle cx="8" cy="8" r="1.4"/>
+  </symbol>
+</svg>

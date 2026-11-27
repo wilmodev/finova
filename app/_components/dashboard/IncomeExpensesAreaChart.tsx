@@ -12,8 +12,9 @@ import {
 } from "recharts";
 
 import ChartTooltip from "./ChartTooltip";
-export type MonthlyPoint = {
-  label: string; // "Jan", "Feb"…
+
+type MonthlyPoint = {
+  label: string; 
   income: number;
   expenses: number;
 };
@@ -36,8 +37,6 @@ const COLORS = {
 
 const formatK = (n: number) => (n === 0 ? "0" : `${n / 1000}k`);
 
-/* ---------- Chart ---------- */
-
 export function IncomeExpensesAreaChart({
   data,
   className = "h-64 w-full ",
@@ -46,7 +45,6 @@ export function IncomeExpensesAreaChart({
   const currentLabel = data.at(-1)?.label;
 
   return (
-    <section className="mt-15">
       <div
       className={className }
       role="img"
@@ -88,7 +86,7 @@ export function IncomeExpensesAreaChart({
             cursor={{ stroke: COLORS.income, strokeOpacity: 0.55, strokeDasharray: "3 4" }}
           />
 
-          {/* Marks the current month */}
+      
           {currentLabel && (
             <ReferenceLine
               x={currentLabel}
@@ -119,6 +117,5 @@ export function IncomeExpensesAreaChart({
         </AreaChart>
       </ResponsiveContainer>
     </div>
-    </section>
   );
 }

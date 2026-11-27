@@ -2,7 +2,7 @@ import Image from 'next/image'
 import finovaLogo from '@/public/finova-logo.svg'
 import NavLink from "./NavLink"
 
-const sidebarItems = [
+export const links = [
   {
     name: 'Dashboard',
     icon: 'icon-grid'
@@ -50,7 +50,7 @@ export default function Sidebar(){
     <h2 className="text-text-secondary w-full px-6 my-2 font-semibold">MENU</h2>
     <nav className="w-full px-3 ">
       <ul className="flex flex-col gap-1 ">
-        {sidebarItems.map((item, index) => 
+        {links.map((item, index) => 
         <NavLink icon={item.icon} name={item.name} key={index} /> 
       )} 
       </ul>  

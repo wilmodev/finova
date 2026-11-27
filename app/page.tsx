@@ -1,8 +1,8 @@
-import SpendingByCategory from "@/app/_components/home/SpendingByCategory";
+import SpendingByCategory from "@/app/_components/ui/SpendingByCategory";
 import IncomeVsExpenses from "@/app/_components/home/IncomeVsExpenses";
 import Header from "@/app/_components/layout/Header";
 import Footer from "@/app/_components/layout/Footer";
-
+import Link from "next/link";
 export default function Home() {
   return (
     <>
@@ -22,9 +22,13 @@ export default function Home() {
               <button className="rounded-3xl px-7 font-semibold py-2 bg-primary text-text-primary ">
                 Get started
               </button>
-               <button className="rounded-3xl px-7 font-semibold py-2 border border-card-border  text-text-primary ">
+               <Link
+                href={'/dashboard'}
+               >
+                <button className="rounded-3xl cursor-pointer px-7 font-semibold py-2 border border-card-border  text-text-primary ">
                 View demo
               </button>
+               </Link>
             </div>
           </section>
 
